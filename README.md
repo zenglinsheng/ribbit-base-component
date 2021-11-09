@@ -1,2 +1,2 @@
 # ribbit-base-component
-ribbitmq基础组件封装
+ribbitmq基础组件封装...
