@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="rabbit-api" />
+        <module name="rabbit-common" />
+        <module name="rabbit-core-producer" />
+        <module name="rabbit-task" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="7">
+      <module name="rabbit-api" target="8" />
+      <module name="rabbit-common" target="8" />
+      <module name="rabbit-core-producer" target="8" />
+      <module name="rabbit-parent" target="8" />
+      <module name="rabbit-task" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
