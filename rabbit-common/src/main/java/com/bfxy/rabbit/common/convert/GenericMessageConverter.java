@@ -20,12 +20,25 @@ public class GenericMessageConverter implements MessageConverter {
 		Preconditions.checkNotNull(serializer);
 		this.serializer = serializer;
 	}
-	
+
+    /**
+     * org.springframework.amqp.core.Message转换为com.bfxy.rabbit.api.Message
+     * @param message
+     * @return
+     * @throws MessageConversionException
+     */
 	@Override
 	public Object fromMessage(org.springframework.amqp.core.Message message) throws MessageConversionException {
 		return this.serializer.deserialize(message.getBody());
 	}
 
+    /**
+     * com.bfxy.rabbit.api.Message转化为org.springframework.amqp.core.Message
+     * @param object
+     * @param messageProperties
+     * @return
+     * @throws MessageConversionException
+     */
 	@Override
 	public org.springframework.amqp.core.Message toMessage(Object object, MessageProperties messageProperties)
 			throws MessageConversionException {

@@ -33,28 +33,28 @@ public @interface ElasticJobConfig {
 	
 	boolean monitorExecution() default false;
 	
-	public int monitorPort() default -1;	//must
+	int monitorPort() default -1;	//must
 
-	public int maxTimeDiffSeconds() default -1;	//must
+    int maxTimeDiffSeconds() default -1;	//must
 
-	public String jobShardingStrategyClass() default "";	//must
+    String jobShardingStrategyClass() default "";	//must
 
-	public int reconcileIntervalMinutes() default 10;	//must
+    int reconcileIntervalMinutes() default 10;	//must
 
-	public String eventTraceRdbDataSource() default "";	//must
+    String eventTraceRdbDataSource() default "";	//must
 
-	public String listener() default "";	//must
+    String listener() default "";	//must
 
-	public boolean disabled() default false;	//must
+    boolean disabled() default false;	//must
 
-	public String distributedListener() default "";
+    String distributedListener() default "";
 
-	public long startedTimeoutMilliseconds() default Long.MAX_VALUE;	//must
+    long startedTimeoutMilliseconds() default Long.MAX_VALUE;	//must
 
-	public long completedTimeoutMilliseconds() default Long.MAX_VALUE;		//must
+    long completedTimeoutMilliseconds() default Long.MAX_VALUE;		//must
 
-	public String jobExceptionHandler() default "com.dangdang.ddframe.job.executor.handler.impl.DefaultJobExceptionHandler";
+    String jobExceptionHandler() default "com.dangdang.ddframe.job.executor.handler.impl.DefaultJobExceptionHandler";
 
-	public String executorServiceHandler() default "com.dangdang.ddframe.job.executor.handler.impl.DefaultExecutorServiceHandler";
+    String executorServiceHandler() default "com.dangdang.ddframe.job.executor.handler.impl.DefaultExecutorServiceHandler";
 	
 }
