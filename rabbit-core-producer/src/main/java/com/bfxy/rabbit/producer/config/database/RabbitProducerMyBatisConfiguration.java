@@ -12,8 +12,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.core.io.support.ResourcePatternResolver;
 
-
-
 @Configuration
 @AutoConfigureAfter(value = {RabbitProducerDataSourceConfiguration.class})
 public class RabbitProducerMyBatisConfiguration {
