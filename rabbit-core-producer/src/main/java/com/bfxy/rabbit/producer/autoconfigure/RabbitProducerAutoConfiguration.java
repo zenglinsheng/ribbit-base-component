@@ -10,10 +10,9 @@ import com.bfxy.rabbit.task.annotation.EnableElasticJob;
  * @author Alienware
  *
  */
-@EnableElasticJob
+//@EnableElasticJob
 @Configuration
 @ComponentScan({"com.bfxy.rabbit.producer.*"})
 public class RabbitProducerAutoConfiguration {
-
 
 }

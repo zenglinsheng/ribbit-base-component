@@ -3,6 +3,7 @@ package com.bfxy.rabbit.producer.broker;
 import java.util.List;
 import java.util.Map;
 
+import com.bfxy.rabbit.api.SendCallback;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.connection.CorrelationData;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -36,11 +37,13 @@ import lombok.extern.slf4j.Slf4j;
 @Component
 public class RabbitTemplateContainer implements RabbitTemplate.ConfirmCallback {
 
-	private Map<String /* TOPIC */, RabbitTemplate> rabbitMap = Maps.newConcurrentMap();
+	private final Map<String /* TOPIC */, RabbitTemplate> rabbitMap = Maps.newConcurrentMap();
 	
-	private Splitter splitter = Splitter.on("#");
+	private final Splitter splitter = Splitter.on("#");
 	
-	private SerializerFactory serializerFactory = JacksonSerializerFactory.INSTANCE;
+	private final SerializerFactory serializerFactory = JacksonSerializerFactory.INSTANCE;
+
+	private final static Map<String, SendCallback> callbackMap = Maps.newConcurrentMap();
 	
 	@Autowired
 	private ConnectionFactory connectionFactory;
@@ -88,6 +91,7 @@ public class RabbitTemplateContainer implements RabbitTemplate.ConfirmCallback {
 		String messageId = strings.get(0);
 		long sendTime = Long.parseLong(strings.get(1));
 		String messageType = strings.get(2);
+
 		if(ack) {
 			//	当Broker 返回ACK成功时, 就是更新一下日志表里对应的消息发送状态为 SEND_OK
 			
@@ -95,10 +99,29 @@ public class RabbitTemplateContainer implements RabbitTemplate.ConfirmCallback {
 			if(MessageType.RELIANT.endsWith(messageType)) {
 				this.messageStoreService.succuess(messageId);
 			}
+
+			SendCallback sendCallback = clearCallback(messageId);
+			if (sendCallback != null) {
+				sendCallback.onSuccess();
+			}
 			log.info("send message is OK, confirm messageId: {}, sendTime: {}", messageId, sendTime);
 		} else {
+			if (MessageType.CONFIRM.equals(messageType)) {
+				SendCallback sendCallback = clearCallback(messageId);
+				if (sendCallback != null) {
+					sendCallback.onFailure();
+				}
+			}
 			log.error("send message is Fail, confirm messageId: {}, sendTime: {}", messageId, sendTime);
-			
 		}
 	}
+
+	public static void addCallback(String messageId,SendCallback sendCallback) {
+		callbackMap.putIfAbsent(messageId, sendCallback);
+	}
+
+	public static SendCallback clearCallback(String messageId) {
+		return callbackMap.remove(messageId);
+	}
+
 }

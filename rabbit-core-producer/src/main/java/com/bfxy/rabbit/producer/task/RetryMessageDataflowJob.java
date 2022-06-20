@@ -2,6 +2,8 @@ package com.bfxy.rabbit.producer.task;
 
 import java.util.List;
 
+import com.bfxy.rabbit.api.SendCallback;
+import com.bfxy.rabbit.producer.broker.RabbitTemplateContainer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -49,6 +51,11 @@ public class RetryMessageDataflowJob implements DataflowJob<BrokerMessage>{
 			String messageId = brokerMessage.getMessageId();
 			if(brokerMessage.getTryCount() >= MAX_RETRY_COUNT) {
 				this.messageStoreService.failure(messageId);
+
+				SendCallback sendCallback = RabbitTemplateContainer.clearCallback(messageId);
+				if (sendCallback != null) {
+					sendCallback.onFailure();
+				}
 				log.warn(" -----消息设置为最终失败，消息ID: {} -------", messageId);
 			} else {
 				//	每次重发的时候要更新一下try count字段

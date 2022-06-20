@@ -56,8 +56,8 @@ public class ProducerClient implements MessageProducer {
 	
 	@Override
 	public void send(Message message, SendCallback sendCallback) throws MessageRunTimeException {
-		// TODO Auto-generated method stub
-		
+		RabbitTemplateContainer.addCallback(message.getMessageId(), sendCallback);
+		send(message);
 	}
 
 }
