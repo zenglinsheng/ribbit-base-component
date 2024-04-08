@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6bfa3e4c-aac8-493b-920b-9260245fcdd8" name="Default" comment="多余文件删除">
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.apt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.springframework.ide.eclipse.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-api/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-api/.settings/org.eclipse.jdt.apt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-api/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-api/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-api/.settings/org.springframework.ide.eclipse.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-api/rabbit-api.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-api/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-api/target/rabbit-api-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit-core-producer/src/main/resources/rabbit-producer-message.properties" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-core-producer/src/main/resources/rabbit-producer-message.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +59,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\softwall install\apache-maven-3.9.6\repository" />
-        <option name="mavenHome" value="E:/dp.shao/apache-maven-3.3.9-bin/apache-maven-3.3.9" />
+        <option name="mavenHome" value="D:\softwall install\apache-maven-3.9.6" />
         <option name="userSettingsFile" value="D:\softwall install\apache-maven-3.9.6\conf\settings2.xml" />
       </MavenGeneralSettings>
     </option>
@@ -167,6 +154,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven.rabbit-parent [clean].executor": "Run",
+    "Maven.rabbit-parent [install].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -289,7 +278,7 @@
       <workItem from="1636421744002" duration="762000" />
       <workItem from="1655512798013" duration="68000" />
       <workItem from="1655512881235" duration="263000" />
-      <workItem from="1712554706228" duration="402000" />
+      <workItem from="1712554706228" duration="1200000" />
     </task>
     <task id="LOCAL-00001" summary="多余文件删除">
       <option name="closed" value="true" />
@@ -299,7 +288,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712555015526</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="多余文件删除">
+      <option name="closed" value="true" />
+      <created>1712555392914</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712555392914</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
