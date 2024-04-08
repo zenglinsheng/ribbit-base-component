@@ -1,8 +1,0 @@
-com\bfxy\rabbit\common\serializer\Serializer.class
-com\bfxy\rabbit\common\serializer\impl\JacksonSerializerFactory.class
-com\bfxy\rabbit\common\convert\GenericMessageConverter.class
-com\bfxy\rabbit\common\mybatis\handler\MessageJsonTypeHandler.class
-com\bfxy\rabbit\common\convert\RabbitMessageConverter.class
-com\bfxy\rabbit\common\serializer\SerializerFactory.class
-com\bfxy\rabbit\common\serializer\impl\JacksonSerializer.class
-com\bfxy\rabbit\common\util\FastJsonConvertUtil.class

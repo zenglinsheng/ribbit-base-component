@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/rabbit-api/rabbit-api.iml" filepath="$PROJECT_DIR$/rabbit-api/rabbit-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbit-common/rabbit-common.iml" filepath="$PROJECT_DIR$/rabbit-common/rabbit-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbit-core-producer/rabbit-core-producer.iml" filepath="$PROJECT_DIR$/rabbit-core-producer/rabbit-core-producer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rabbit-parent.iml" filepath="$PROJECT_DIR$/rabbit-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbit-task/rabbit-task.iml" filepath="$PROJECT_DIR$/rabbit-task/rabbit-task.iml" />
     </modules>
   </component>

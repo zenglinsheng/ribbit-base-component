@@ -13,12 +13,14 @@
         <module name="rabbit-core-producer" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="7">
-      <module name="rabbit-api" target="1.5" />
-      <module name="rabbit-common" target="1.5" />
-      <module name="rabbit-core-producer" target="1.5" />
-      <module name="rabbit-parent" target="1.5" />
-      <module name="rabbit-task" target="1.5" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="7" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="rabbit-api" options="-parameters" />
+      <module name="rabbit-common" options="-parameters" />
+      <module name="rabbit-core-producer" options="-parameters" />
+      <module name="rabbit-task" options="-parameters" />
+    </option>
   </component>
 </project>
