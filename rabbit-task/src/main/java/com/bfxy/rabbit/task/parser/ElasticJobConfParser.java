@@ -1,18 +1,5 @@
 package com.bfxy.rabbit.task.parser;
 
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-
-import org.springframework.beans.factory.config.BeanDefinition;
-import org.springframework.beans.factory.support.BeanDefinitionBuilder;
-import org.springframework.beans.factory.support.DefaultListableBeanFactory;
-import org.springframework.beans.factory.support.ManagedList;
-import org.springframework.boot.context.event.ApplicationReadyEvent;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationListener;
-import org.springframework.util.StringUtils;
-
 import com.bfxy.rabbit.task.annotation.ElasticJobConfig;
 import com.bfxy.rabbit.task.autoconfigure.JobZookeeperProperties;
 import com.bfxy.rabbit.task.enums.ElasticJobTypeEnum;
@@ -26,10 +13,22 @@ import com.dangdang.ddframe.job.executor.handler.JobProperties;
 import com.dangdang.ddframe.job.lite.config.LiteJobConfiguration;
 import com.dangdang.ddframe.job.lite.spring.api.SpringJobScheduler;
 import com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter;
-
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.config.BeanDefinition;
+import org.springframework.beans.factory.support.BeanDefinitionBuilder;
+import org.springframework.beans.factory.support.DefaultListableBeanFactory;
+import org.springframework.beans.factory.support.ManagedList;
+import org.springframework.boot.context.event.ApplicationReadyEvent;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationListener;
+import org.springframework.util.StringUtils;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 
 @Slf4j
+@SuppressWarnings("all")
 public class ElasticJobConfParser implements ApplicationListener<ApplicationReadyEvent> {
 
 	private JobZookeeperProperties jobZookeeperProperties;

@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @AutoConfigureAfter(RabbitProducerDataSourceConfiguration.class)
+@SuppressWarnings("all")
 public class RabbitProducerMybatisMapperScanerConfig {
 	
 	@Bean(name="rabbitProducerMapperScannerConfigurer")

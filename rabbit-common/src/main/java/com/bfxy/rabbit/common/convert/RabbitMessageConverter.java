@@ -12,6 +12,7 @@ import com.google.common.base.Preconditions;
  * @author Alienware
  *
  */
+@SuppressWarnings("all")
 public class RabbitMessageConverter implements MessageConverter {
 
 	private GenericMessageConverter delegate;

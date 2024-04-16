@@ -1,10 +1,10 @@
 package com.bfxy.rabbit.api;
 
+import lombok.Data;
+
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
-
-import lombok.Data;
 
 /**
  * 	$Message

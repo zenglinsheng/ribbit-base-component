@@ -116,7 +116,7 @@ public class RabbitTemplateContainer implements RabbitTemplate.ConfirmCallback {
 		}
 	}
 
-	public static void addCallback(String messageId,SendCallback sendCallback) {
+	public static void addCallback(String messageId, SendCallback sendCallback) {
 		callbackMap.putIfAbsent(messageId, sendCallback);
 	}
 

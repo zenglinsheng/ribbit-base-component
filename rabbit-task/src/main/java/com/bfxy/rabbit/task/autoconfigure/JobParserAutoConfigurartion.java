@@ -1,20 +1,19 @@
 package com.bfxy.rabbit.task.autoconfigure;
 
+import com.bfxy.rabbit.task.parser.ElasticJobConfParser;
+import com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration;
+import com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.bfxy.rabbit.task.parser.ElasticJobConfParser;
-import com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration;
-import com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter;
-
-import lombok.extern.slf4j.Slf4j;
-
 @Slf4j
 @Configuration
 @ConditionalOnProperty(prefix = "elastic.job.zk", name = {"namespace", "serverLists"}, matchIfMissing = false)
 @EnableConfigurationProperties(JobZookeeperProperties.class)
+
 public class JobParserAutoConfigurartion {
 
 	@Bean(initMethod = "init")

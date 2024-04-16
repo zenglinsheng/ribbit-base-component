@@ -18,6 +18,7 @@ import com.dangdang.ddframe.job.api.dataflow.DataflowJob;
 import lombok.extern.slf4j.Slf4j;
 
 @Component
+@SuppressWarnings("all")
 @ElasticJobConfig(
 		name= "com.bfxy.rabbit.producer.task.RetryMessageDataflowJob",
 		cron= "0/10 * * * * ?",

@@ -1,16 +1,16 @@
 package com.bfxy.rabbit.producer.service;
 
-import java.util.Date;
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import com.bfxy.rabbit.producer.constant.BrokerMessageStatus;
 import com.bfxy.rabbit.producer.entity.BrokerMessage;
 import com.bfxy.rabbit.producer.mapper.BrokerMessageMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.Date;
+import java.util.List;
 
 @Service
+@SuppressWarnings("all")
 public class MessageStoreService {
 
 	@Autowired

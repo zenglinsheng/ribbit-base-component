@@ -1,8 +1,7 @@
 package com.bfxy.rabbit.task.autoconfigure;
 
-import org.springframework.boot.context.properties.ConfigurationProperties;
-
 import lombok.Data;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @ConfigurationProperties(prefix = "elastic.job.zk")
 @Data

@@ -1,16 +1,15 @@
 package com.bfxy.rabbit.common.mybatis.handler;
 
-import java.sql.CallableStatement;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
+import com.bfxy.rabbit.api.Message;
+import com.bfxy.rabbit.common.util.FastJsonConvertUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.ibatis.type.BaseTypeHandler;
 import org.apache.ibatis.type.JdbcType;
 
-import com.bfxy.rabbit.api.Message;
-import com.bfxy.rabbit.common.util.FastJsonConvertUtil;
+import java.sql.CallableStatement;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 
 

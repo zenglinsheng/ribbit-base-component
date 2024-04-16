@@ -1,15 +1,9 @@
 package com.bfxy.rabbit.task.annotation;
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Inherited;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
-
+import com.bfxy.rabbit.task.autoconfigure.JobParserAutoConfigurartion;
 import org.springframework.context.annotation.Import;
 
-import com.bfxy.rabbit.task.autoconfigure.JobParserAutoConfigurartion;
+import java.lang.annotation.*;
 
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)

@@ -1,11 +1,11 @@
 package com.bfxy.rabbit.common.util;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializerFeature;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 	$FastJsonConvertUtil java对象与json进行转换的通用工具类

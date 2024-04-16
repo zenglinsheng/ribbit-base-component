@@ -1,12 +1,11 @@
 package com.bfxy.rabbit.producer.mapper;
 
-import java.util.Date;
-import java.util.List;
-
+import com.bfxy.rabbit.producer.entity.BrokerMessage;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
-import com.bfxy.rabbit.producer.entity.BrokerMessage;
+import java.util.Date;
+import java.util.List;
 
 @Mapper
 public interface BrokerMessageMapper {

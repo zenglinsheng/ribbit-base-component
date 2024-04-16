@@ -18,6 +18,7 @@ import com.google.common.base.Preconditions;
  *
  */
 @Component
+@SuppressWarnings("all")
 public class ProducerClient implements MessageProducer {
 
 	@Autowired

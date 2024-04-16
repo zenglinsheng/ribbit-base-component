@@ -1,11 +1,10 @@
 package com.bfxy.rabbit.common.convert;
 
+import com.bfxy.rabbit.common.serializer.Serializer;
+import com.google.common.base.Preconditions;
 import org.springframework.amqp.core.MessageProperties;
 import org.springframework.amqp.support.converter.MessageConversionException;
 import org.springframework.amqp.support.converter.MessageConverter;
-
-import com.bfxy.rabbit.common.serializer.Serializer;
-import com.google.common.base.Preconditions;
 
 /**
  * 	$GenericMessageConverter

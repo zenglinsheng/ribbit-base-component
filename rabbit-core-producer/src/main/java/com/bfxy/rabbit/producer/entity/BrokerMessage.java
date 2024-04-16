@@ -1,9 +1,9 @@
 package com.bfxy.rabbit.producer.entity;
 
+import com.bfxy.rabbit.api.Message;
+
 import java.io.Serializable;
 import java.util.Date;
-
-import com.bfxy.rabbit.api.Message;
 
 
 /**

@@ -1,7 +1,5 @@
 package com.bfxy.rabbit.producer.config.database;
 
-import javax.sql.DataSource;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -11,6 +9,8 @@ import org.springframework.jdbc.datasource.init.DataSourceInitializer;
 import org.springframework.jdbc.datasource.init.DatabasePopulator;
 import org.springframework.jdbc.datasource.init.ResourceDatabasePopulator;
 
+import javax.sql.DataSource;
+
 /**
  * 	$BrokerMessageConfiguration 
  * 	帮我执行SQL脚本
@@ -19,6 +19,7 @@ import org.springframework.jdbc.datasource.init.ResourceDatabasePopulator;
  *
  */
 @Configuration
+@SuppressWarnings("all")
 public class BrokerMessageConfiguration {
 
     @Autowired
