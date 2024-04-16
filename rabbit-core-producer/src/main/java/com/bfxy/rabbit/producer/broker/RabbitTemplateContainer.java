@@ -35,6 +35,7 @@ import lombok.extern.slf4j.Slf4j;
  */
 @Slf4j
 @Component
+@SuppressWarnings("all")
 public class RabbitTemplateContainer implements RabbitTemplate.ConfirmCallback {
 
 	private final Map<String /* TOPIC */, RabbitTemplate> rabbitMap = Maps.newConcurrentMap();
@@ -106,11 +107,9 @@ public class RabbitTemplateContainer implements RabbitTemplate.ConfirmCallback {
 			}
 			log.info("send message is OK, confirm messageId: {}, sendTime: {}", messageId, sendTime);
 		} else {
-			if (MessageType.CONFIRM.equals(messageType)) {
-				SendCallback sendCallback = clearCallback(messageId);
-				if (sendCallback != null) {
-					sendCallback.onFailure();
-				}
+			SendCallback sendCallback = clearCallback(messageId);
+			if (sendCallback != null) {
+				sendCallback.onFailure();
 			}
 			log.error("send message is Fail, confirm messageId: {}, sendTime: {}", messageId, sendTime);
 		}
