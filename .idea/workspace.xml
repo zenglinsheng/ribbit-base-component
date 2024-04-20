@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6bfa3e4c-aac8-493b-920b-9260245fcdd8" name="Default" comment="fix:代码优化">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-core-producer/src/main/java/com/bfxy/rabbit/producer/broker/RabbitTemplateContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-core-producer/src/main/java/com/bfxy/rabbit/producer/broker/RabbitTemplateContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit-api/src/main/java/com/bfxy/rabbit/api/MessageBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-api/src/main/java/com/bfxy/rabbit/api/MessageBuilder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +60,10 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\softwall install\apache-maven-3.9.6\repository" />
-        <option name="mavenHome" value="D:\softwall install\apache-maven-3.9.6" />
-        <option name="userSettingsFile" value="D:\softwall install\apache-maven-3.9.6\conf\settings2.xml" />
+        <option name="customMavenHome" value="D:\softwareInstall\apache-maven-3.8.1" />
+        <option name="localRepository" value="D:\softwareInstall\apache-maven-3.8.1\repository" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+        <option name="userSettingsFile" value="D:\softwareInstall\apache-maven-3.8.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -152,31 +155,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.rabbit-parent [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.rabbit-parent [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.rabbit-parent [verify].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/code/ribbit-base-component/pom.xml&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;2a181be2452bfaa76a0caa3aee3cc0a4&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.rabbit-parent [clean].executor": "Run",
+    "Maven.rabbit-parent [install].executor": "Run",
+    "Maven.rabbit-parent [verify].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/code/ribbit-base-component/pom.xml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "spring.configuration.checksum": "2a181be2452bfaa76a0caa3aee3cc0a4",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="tests" factoryName="Nosetests">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -259,6 +262,14 @@
       </method>
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
@@ -288,6 +299,7 @@
       <workItem from="1713143060073" duration="10000" />
       <workItem from="1713233746682" duration="1216000" />
       <workItem from="1713236012728" duration="758000" />
+      <workItem from="1713602062663" duration="309000" />
     </task>
     <task id="LOCAL-00001" summary="多余文件删除">
       <option name="closed" value="true" />
@@ -375,7 +387,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -386,6 +410,10 @@
     <MESSAGE value="fix:数据库连接调整" />
     <MESSAGE value="fix:代码优化" />
     <option name="LAST_COMMIT_MESSAGE" value="fix:代码优化" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/rabbit-core-producer/src/main/java/com/bfxy/rabbit/producer/broker/ProducerClient.java">
