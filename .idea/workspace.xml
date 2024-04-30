@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6bfa3e4c-aac8-493b-920b-9260245fcdd8" name="Default" comment="add:rabbitmq学习笔记">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-core-producer/src/main/resources/rabbit-producer-message-schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-core-producer/src/main/resources/rabbit-producer-message-schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-core-producer/src/main/resources/rabbit-producer-message.properties" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-core-producer/src/main/resources/rabbit-producer-message.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit-core-producer/src/main/java/com/bfxy/rabbit/producer/broker/MessageHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-core-producer/src/main/java/com/bfxy/rabbit/producer/broker/MessageHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit-task/src/main/java/com/bfxy/rabbit/task/autoconfigure/JobParserAutoConfigurartion.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-task/src/main/java/com/bfxy/rabbit/task/autoconfigure/JobParserAutoConfigurartion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rabbitmq02.doc" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq02.doc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -309,7 +308,7 @@
       <workItem from="1713834281654" duration="22000" />
       <workItem from="1713853416069" duration="6000" />
       <workItem from="1713853812308" duration="16000" />
-      <workItem from="1714444018002" duration="6616000" />
+      <workItem from="1714444018002" duration="9502000" />
     </task>
     <task id="LOCAL-00001" summary="多余文件删除">
       <option name="closed" value="true" />
@@ -367,7 +366,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714457775812</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add:rabbitmq学习笔记">
+      <option name="closed" value="true" />
+      <created>1714460446542</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1714460446542</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">

@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ConditionalOnProperty(prefix = "elastic.job.zk", name = {"namespace", "serverLists"}, matchIfMissing = false)
 @EnableConfigurationProperties(JobZookeeperProperties.class)
-
+@SuppressWarnings("all")
 public class JobParserAutoConfigurartion {
 
 	@Bean(initMethod = "init")

@@ -5,17 +5,14 @@ import java.util.List;
 import com.bfxy.rabbit.api.Message;
 import com.google.common.collect.Lists;
 
+@SuppressWarnings("all")
 public class MessageHolder {
 
 	private List<Message> messages = Lists.newArrayList();
 	
-	@SuppressWarnings({"rawtypes", "unchecked"})
-	public static final ThreadLocal<MessageHolder> holder = new ThreadLocal() {
-		@Override
-		protected Object initialValue() {
-			return new MessageHolder();
-		}
-	};
+	public static final ThreadLocal<MessageHolder> holder = ThreadLocal.withInitial(
+			() -> new MessageHolder()
+	);
 	
 	public static void add(Message message) {
 		holder.get().messages.add(message);
