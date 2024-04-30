@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6bfa3e4c-aac8-493b-920b-9260245fcdd8" name="Default" comment="fix:代码优化">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq02.doc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-api/src/main/java/com/bfxy/rabbit/api/MessageBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-api/src/main/java/com/bfxy/rabbit/api/MessageBuilder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +165,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/code/ribbit-base-component/pom.xml",
+    "last_opened_file_path": "E:/code/ribbit-base-component",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -299,7 +298,11 @@
       <workItem from="1713143060073" duration="10000" />
       <workItem from="1713233746682" duration="1216000" />
       <workItem from="1713236012728" duration="758000" />
-      <workItem from="1713602062663" duration="309000" />
+      <workItem from="1713602062663" duration="1112000" />
+      <workItem from="1713834281654" duration="22000" />
+      <workItem from="1713853416069" duration="6000" />
+      <workItem from="1713853812308" duration="16000" />
+      <workItem from="1714444018002" duration="1079000" />
     </task>
     <task id="LOCAL-00001" summary="多余文件删除">
       <option name="closed" value="true" />
@@ -333,7 +336,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713234918850</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix:代码优化">
+      <option name="closed" value="true" />
+      <created>1713602425576</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713602425576</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
