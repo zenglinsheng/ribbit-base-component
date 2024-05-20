@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6bfa3e4c-aac8-493b-920b-9260245fcdd8" name="Default" comment="add:rabbitmq学习笔记">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq.doc" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq.doc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rabbitmq02.doc" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq02.doc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -308,7 +309,8 @@
       <workItem from="1713853812308" duration="16000" />
       <workItem from="1714444018002" duration="9525000" />
       <workItem from="1714463890456" duration="9000" />
-      <workItem from="1714530050992" duration="316000" />
+      <workItem from="1714530050992" duration="437000" />
+      <workItem from="1716165169748" duration="4687000" />
     </task>
     <task id="LOCAL-00001" summary="多余文件删除">
       <option name="closed" value="true" />
@@ -382,7 +384,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714463856759</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add:rabbitmq学习笔记">
+      <option name="closed" value="true" />
+      <created>1714530374184</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1714530374184</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
